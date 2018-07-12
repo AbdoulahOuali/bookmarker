@@ -1,6 +1,10 @@
 // listen for form submit
 document.getElementById('myForm').addEventListener('submit', saveBookmark);
 
-function saveBookmark() {
-    console.log(4545);
+function saveBookmark(e) {
+    // get form values
+    var siteName = document.getElementById('siteName');
+    console.log(siteName);
+    // prevent default from submitting
+    e.preventDefault();
 }

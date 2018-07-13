@@ -19,6 +19,15 @@ function saveBookmark(e) {
             console.log(localStorage.getItem('test'));
         */
 
+    // Test if bookmarks is null
+    if (localStorage.getItem('bookmarks') === null) {
+        // Declare an array for storing bookmarks
+        var bookmarks = [];
+        // add values to array 
+        bookmarks.push(bookmark);
+        // set to localstorage
+        localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+    }
 
     // prevent default from submitting
     e.preventDefault();

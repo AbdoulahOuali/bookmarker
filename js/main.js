@@ -7,13 +7,18 @@ function saveBookmark(e) {
     var siteUrl = document.getElementById('siteUrl').value;
 
     var bookMark = {
-        name: siteName,
-        url: siteUrl
-    }
+            name: siteName,
+            url: siteUrl
+        }
+        /*
+            // local storage text
+            // parse json into string and return it back into json
+            localStorage.setItem('test', 'Hello world');
+            console.log(localStorage.getItem('test'));
+            localStorage.removeItem('test');
+            console.log(localStorage.getItem('test'));
+        */
 
-    // local storage text
-    // parse json into string and return it back into json
-    localStorage.setItem('test', 'Hello world');
 
     // prevent default from submitting
     e.preventDefault();
